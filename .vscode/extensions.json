@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "timonwong.shellcheck",
+    "gruntfuggly.todo-tree",
+    "ms-python.python",
+    "visualstudioexptteam.vscodeintellicode",
+    "ms-python.flake8",
+    "ms-python.black-formatter",
+    "ms-python.isort"
+  ]
+}

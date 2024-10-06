@@ -1,0 +1,11 @@
+# production
+log/*
+tmp/*
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.bak
+*Zone.Identifier

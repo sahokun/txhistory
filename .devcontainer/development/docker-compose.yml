@@ -1,0 +1,32 @@
+services:
+  app:
+    # wslユーザー(1000:1000)を割り当てる
+    user: ${HOST_UID:-1000}:${HOST_GID:-1000}
+    image: txhistory:latest
+    container_name: txhistory
+    build:
+      context: "./app"
+      dockerfile: Dockerfile
+      args:
+        - HOST_UID=${HOST_UID:-1000}
+        - HOST_GID=${HOST_GID:-1000}
+    volumes:
+      - ../..:/src
+    #ports:
+    #  - "127.0.0.1:3000:3000"
+    init: true
+    tty: true
+    stdin_open: true
+    command: /bin/bash
+    environment:
+      # Hot Module Replacement (HMR) is enable for virtual box.
+      - CHOKIDAR_USEPOLLING=true
+      # HOME:VSCodeでRemoteDevelopmentするのに必要
+      - HOME=/home/user
+      # PYTHONUNBUFFERED:Dockerコンテナ内でPythonを使用するのに必要
+      - PYTHONUNBUFFERED=1
+      # PYTHONDONTWRITEBYTECODE
+      - PYTHONDONTWRITEBYTECODE=1
+      # PYTHONDEVMODE
+      - PYTHONDEVMODE=1
+    restart: "no"
