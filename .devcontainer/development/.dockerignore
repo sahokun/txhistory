@@ -1,0 +1,12 @@
+# development
+log/*
+tmp/*
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.devcontainer/
+.env
+*.bak
+*Zone.Identifier
