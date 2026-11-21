@@ -2,7 +2,7 @@
 # https://github.com/docker-library/python/blob/9cd324371ef929bfc5036a00d7705a213d8b5020/3.12/bookworm/Dockerfile
 
 # ビルドステージ (builder)
-FROM python:3.12.6-bookworm AS builder
+FROM python:3.15.2-bookworm AS builder
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -21,7 +21,7 @@ RUN wget -O direnv https://github.com/direnv/direnv/releases/download/$DEV_DIREN
   echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
 
 # 実行ステージ (runner)
-FROM python:3.12.6-bookworm AS runner
+FROM python:3.15.2-bookworm AS runner
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
