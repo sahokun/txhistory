@@ -60,7 +60,7 @@ rlp==4.0.1
 rpds-py==0.20.0
 setuptools==75.1.0
 six==1.16.0
-soupsieve==2.6
+soupsieve==4.0
 toolz==0.12.1
 types-requests==2.32.0.20240914
 typing_extensions==4.12.2
