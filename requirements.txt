@@ -15,7 +15,7 @@ pandas-datareader
 beautifulsoup4
 urllib3
 moralis
-web3==7.3.0
+web3==7.15.0
 aiohttp
 numpy
 # openpyxl 追加ライブラリ
