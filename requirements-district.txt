@@ -30,7 +30,7 @@ jsonschema==4.26.0
 jsonschema-specifications==2023.12.1
 kanjize==1.6.1
 lru-dict==1.4.1
-lxml==5.3.0
+lxml==6.1.0
 mccabe==0.7.0
 moralis==0.1.49
 multidict==6.1.0

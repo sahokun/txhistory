@@ -19,7 +19,7 @@ web3==7.3.0
 aiohttp
 numpy
 # openpyxl 追加ライブラリ
-lxml==5.3.0
+lxml==6.1.0
 
 # fix: ModuleNotFoundError: No module named 'distutils'
 setuptools
