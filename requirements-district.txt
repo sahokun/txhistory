@@ -5,7 +5,7 @@ annotated-types==0.8.0
 attrs==24.2.0
 beautifulsoup4==4.15.0
 bitarray==2.9.2
-certifi==2024.8.30
+certifi==2026.10.18
 charset-normalizer==3.5.2
 ckzg==2.1.8
 cytoolz==0.12.3
